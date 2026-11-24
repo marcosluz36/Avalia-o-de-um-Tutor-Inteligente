@@ -1,0 +1,39 @@
+Python 3.12.14
+Data: 2026-09-10
+Testes offline; integrações reais substituídas por doubles.
+
+test_accepts_valid_references_and_explicit_abstention (test_contracts.CitationsTests.test_accepts_valid_references_and_explicit_abstention) ... ok
+test_rejects_grouped_or_renamed_identifiers (test_contracts.CitationsTests.test_rejects_grouped_or_renamed_identifiers) ... ok
+test_rejects_retrieved_but_not_sent_reference (test_contracts.CitationsTests.test_rejects_retrieved_but_not_sent_reference) ... ok
+test_uncited_explanation_is_not_published (test_contracts.CitationsTests.test_uncited_explanation_is_not_published) ... ok
+test_below_threshold_never_enters_context (test_contracts.ContextTests.test_below_threshold_never_enters_context) ... ok
+test_budget_keeps_whole_chunks_and_skips_oversize (test_contracts.ContextTests.test_budget_keeps_whole_chunks_and_skips_oversize) ... ok
+test_documents_stay_outside_system_role (test_contracts.ContextTests.test_documents_stay_outside_system_role) ... ok
+test_old_citations_cannot_bind_to_current_context (test_contracts.ContextTests.test_old_citations_cannot_bind_to_current_context) ... ok
+test_output_is_capped_and_current_question_is_never_silently_cut (test_contracts.ContextTests.test_output_is_capped_and_current_question_is_never_silently_cut) ... ok
+test_document_and_query_prefixes_are_explicit (test_contracts.EmbeddingGuardTests.test_document_and_query_prefixes_are_explicit) ... ok
+test_oversized_input_is_rejected_before_model_encode (test_contracts.EmbeddingGuardTests.test_oversized_input_is_rejected_before_model_encode) ... ok
+test_artifact_paths_cannot_leave_data_directory (test_contracts.FileIntegrityTests.test_artifact_paths_cannot_leave_data_directory) ... ok
+test_renamed_identical_upload_skips_extraction_and_embeddings (test_contracts.FileIntegrityTests.test_renamed_identical_upload_skips_extraction_and_embeddings) ... ok
+test_catalog_capabilities_and_invalid_id (test_contracts.OpenRouterTests.test_catalog_capabilities_and_invalid_id) ... ok
+test_http_error_never_echoes_body_or_key (test_contracts.OpenRouterTests.test_http_error_never_echoes_body_or_key) ... ok
+test_request_uses_retrieval_k_only_locally (test_contracts.OpenRouterTests.test_request_uses_retrieval_k_only_locally) ... ok
+test_unsupported_temperature_is_omitted (test_contracts.OpenRouterTests.test_unsupported_temperature_is_omitted) ... ok
+test_explicit_printed_map_preserves_its_origin (test_contracts.ProvenanceTests.test_explicit_printed_map_preserves_its_origin) ... ok
+test_missing_provenance_is_not_fabricated (test_contracts.ProvenanceTests.test_missing_provenance_is_not_fabricated) ... ok
+test_pdf_page_labels_are_not_printed_pages (test_contracts.ProvenanceTests.test_pdf_page_labels_are_not_printed_pages) ... ok
+test_progressive_followup_keeps_original_exercise (test_contracts.RetrievalTests.test_progressive_followup_keeps_original_exercise) ... ok
+test_topic_change_does_not_keep_old_exercise (test_contracts.RetrievalTests.test_topic_change_does_not_keep_old_exercise) ... ok
+test_partial_insert_keeps_old_generation_selected (test_contracts.StorePublicationTests.test_partial_insert_keeps_old_generation_selected) ... ok
+test_search_filters_unpublished_generations (test_contracts.StorePublicationTests.test_search_filters_unpublished_generations) ... ok
+test_wrong_vector_dimension_never_reaches_database (test_contracts.StorePublicationTests.test_wrong_vector_dimension_never_reaches_database) ... ok
+test_api_failure_does_not_claim_confirmed_delivery (test_contracts.TutorTests.test_api_failure_does_not_claim_confirmed_delivery) ... ok
+test_empty_or_irrelevant_base_does_not_call_generation (test_contracts.TutorTests.test_empty_or_irrelevant_base_does_not_call_generation) ... ok
+test_invalid_generation_is_withheld_but_auditable (test_contracts.TutorTests.test_invalid_generation_is_withheld_but_auditable) ... ok
+test_retrieved_sent_cited_are_distinct_and_snapshot_is_independent (test_contracts.TutorTests.test_retrieved_sent_cited_are_distinct_and_snapshot_is_independent) ... ok
+test_pdf_docling_hybrid_e5_chroma_dedup_and_trace (test_integration.RealPipelineTests.test_pdf_docling_hybrid_e5_chroma_dedup_and_trace) ... skipped 'Requer dependências reais e download dos modelos; habilite TUTORIA_INTEGRATION=1.'
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.008s
+
+OK (skipped=1)

@@ -1,0 +1,2 @@
+# Opcional para OCR pt/en. Instale Torch CPU e torchvision CPU antes, no Linux.
+easyocr>=1.7,<2
